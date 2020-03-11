@@ -23,8 +23,15 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+
+
 app.get('/id', (req, res) => {
     res.render('id&password')
+})
+
+
+app.get('/id/hotvip', (req, res) => {
+    res.render('viphot')
 })
 
 
