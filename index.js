@@ -34,8 +34,12 @@ app.get('/id/hotvip', (req, res) => {
     res.render('viphot')
 })
 
+app.get('/amprime', (req, res) => {
+    res.render('prime')
+}),
 
 
-app.listen(port, () => {
-    console.log('server is running ' + port)
-})
+
+    app.listen(port, () => {
+        console.log('server is running ' + port)
+    })

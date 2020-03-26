@@ -53,3 +53,40 @@ body {
   border-radius: 20px;
   background-image: linear-gradient(to left, #2e19a7, #ae0ee9);
 }
+
+.title {
+  animation: moveInRight 1s ease-out; /*short hand for animation*/
+  animation: moveInLeft 1s ease-out; /*short hand for animation*/
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
